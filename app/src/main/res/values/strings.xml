@@ -1,3 +1,8 @@
 <resources>
+    <string name="myStudio">中微子</string>
     <string name="app_name">LazyQuick</string>
+    <string name="lazyQuick">懒速达</string>
+    <string name="logo">logo</string>
+    <string name="slogan">懒速达，为梦想解放更多时间</string>
+    <string name="motto">迈进世界五百墙 © 2021 hnuster.site</string>
 </resources>
