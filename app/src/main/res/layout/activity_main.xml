@@ -1,11 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:id="@+id/top_content"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/user_portrait"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_launcher_round"
+            android:contentDescription="@string/portrait_tip" />
+        <Button
+            android:id="@+id/user_status"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/log_no" />
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="主页面"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_content"
+        android:background="#F3F1F1"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/tieba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/tieba"
+                android:contentDescription="@string/tieba_op" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tieba_op" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/more"
+                android:contentDescription="@string/tieba_op" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more" />
+        </LinearLayout>
+    </GridLayout>
 
 </RelativeLayout>

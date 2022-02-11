@@ -16,8 +16,14 @@ public class WelcomeActivity extends AppCompatActivity {
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
+                System.out.println("初始化中...");
+                /*
+                    1.检查网络连接
+                    2.检查登录状态
+                 */
                 System.out.println("初始化完毕...");
                 Intent intent = new Intent(WelcomeActivity.this,MainActivity.class);
+                //数据传递
                 startActivity(intent);
                 finish();
             }
