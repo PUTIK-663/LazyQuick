@@ -23,9 +23,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         LinearLayout topContent = findViewById(R.id.top_content);
-        LinearLayout.MarginLayoutParams params = (LinearLayout.MarginLayoutParams) topContent.getLayoutParams();
-        params.setMargins(0,getStatusBarHeight(),0,0);
-        topContent.setLayoutParams(params);
+//        LinearLayout.MarginLayoutParams params = (LinearLayout.MarginLayoutParams) topContent.getLayoutParams();
+//        params.setMargins(0,getStatusBarHeight(),0,0);
+//        topContent.setLayoutParams(params);
+        topContent.setPadding(5,getStatusBarHeight(),5,5);
     }
 
     @Override

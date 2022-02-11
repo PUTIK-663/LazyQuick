@@ -3,19 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal">
+
     <LinearLayout
         android:id="@+id/top_content"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:gravity="center_horizontal">
+        android:background="#E3D2A1">
+
         <ImageView
             android:id="@+id/user_portrait"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@mipmap/ic_launcher_foreground"
             android:contentDescription="@string/portrait_tip" />
+
         <Button
             android:id="@+id/user_status"
             android:layout_width="wrap_content"
